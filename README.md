@@ -1,14 +1,14 @@
 # Seja Bem-Vindo ao Gerador de artes para igrejas 👋
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)](README.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](README.md)
-[![Twitter: pedrinho_lemes](https://img.shields.io/twitter/follow/pedrinho_lemes.svg?style=social)](https://twitter.com/pedrinho_lemes)
+![Version](https://img.shields.io/github/package-json/v/pedrinholemes/gerador-de-arte)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Twitter](https://img.shields.io/twitter/follow/pedrinho_lemes.svg?style=social)](https://twitter.com/pedrinho_lemes)
+![Language](https://img.shields.io/github/languages/top/pedrinholemes/gerador-de-arte)
+![NextJS Version](https://img.shields.io/github/package-json/dependency-version/pedrinholemes/gerador-de-arte/next)
 
-> Gerador de artes de tamanho 1080x1080 para igrejas com personalizaçao simples e facil
+> Gerador de artes de tamanho 1080x1080 para igrejas com personalização simples e fácil
 
-<h3>
-✨ [Demo](https://gerador-de-arte.vercel.app)
-</h3>
+### ✨ [Demo](https://gerador-de-arte.vercel.app)
 
 ## Comandos
 
