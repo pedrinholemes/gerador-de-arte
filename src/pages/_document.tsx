@@ -55,8 +55,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Fira+Code"
             rel="stylesheet"
           />
-
-          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
