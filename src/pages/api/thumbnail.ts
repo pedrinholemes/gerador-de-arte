@@ -11,15 +11,22 @@ export default async (
 ): Promise<any> => {
   try {
     const query = req.query
+    const json = JSON.parse(String(query.json))
 
-    const title = String(query.title)
-    const thumbnail_bg = String(query.thumbnail_bg)
-
-    if (!title) {
-      throw new Error('Title is required');
+    if (
+      !json.title ||
+      !json.preacher ||
+      !json.time ||
+      !json.date ||
+      !json.church.name ||
+      !json.church.address ||
+      !json.images.first ||
+      !json.images.second
+    ) {
+      throw new Error('All fields is required');
     }
 
-    const html = getHtml({ title, thumbnail_bg })
+    const html = getHtml(json)
 
     if (isHtmlDebug) {
       res.setHeader('Content-Type', 'text/html')
@@ -33,10 +40,10 @@ export default async (
     res.statusCode = 200
 
     res.setHeader('Content-Type', `image/png`)
-    res.setHeader(
+    /*res.setHeader(
       'Cache-Control',
       'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
-    )
+    )*/
 
     res.end(file)
   } catch (e) {
