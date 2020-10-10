@@ -8,18 +8,21 @@ interface Props {
   image?: string
   url?: string
   description?: string
+  keywords?: string[]
 }
-const SEO: React.FC<Props> = ({ title, description, image, url }) => {
+const SEO: React.FC<Props> = ({ title, description, image, url, keywords = [] }) => {
   return (
     <Head>
       <title>{title || siteConfig.title}</title>
       <meta name="description" content={description || siteConfig.description} />
       <meta name="author" content={siteConfig.author} />
+      <meta name="keywords" content={[...siteConfig.keywords, ...keywords].join(', ')} />
       <meta property="og:title" content={title || siteConfig.title} />
       <meta property="og:image" content={image || siteConfig.image} />
       <meta property="og:description" content={description || siteConfig.description} />
       <meta property="og:author" content={siteConfig.author} />
       {url && <meta property="og:url" content={url} />}
+      {url && <meta name="canonical" content={url} />}
       <meta property="og:locale" content={siteConfig.language} />
       <meta property="og:site_name" content={siteConfig.title} />
       <meta property="og:type" content="website" />

@@ -55,6 +55,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Fira+Code"
             rel="stylesheet"
           />
+          <script data-ad-client="ca-pub-3678749159891740" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <body>
           <Main />
